@@ -3,20 +3,20 @@
 
 
 const btn = document.querySelector('.btn');
-let numero 
+let numero = '';
 
 btn.addEventListener('click',function(){
-    const numbero = prompt('inserisci un numero di 4 cifre');
+    const numero = prompt('inserisci un numero di 4 cifre');
     let somma = 0;
     let media = 0;
     
-    while (numero.length != 4 || isNaN(numero) {
+    while (numero.length != 4 || isNaN(numero)) {
         alert('inserisci 4 cifre');
         numero = prompt('inserisci un numero di 4 cifre');
     }
 
 
-    for( let i =0; i < numero.length; i++){
+    for( let i = 0; i < numero.length; i++){
         somma += parseInt(numero[i]);
     }
     media = somma / numero.length;
